@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'rails', '4.1.4'
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -18,6 +17,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 group :development do
   gem 'better_errors'
+  gem 'sqlite3'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
   gem 'rails_layout'
@@ -33,4 +33,9 @@ group :test do
   gem 'faker'
   gem 'launchy'
   gem 'selenium-webdriver'
+end
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor'
+  gem 'thin'
 end
