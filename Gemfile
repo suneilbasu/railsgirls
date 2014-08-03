@@ -17,7 +17,6 @@ gem 'carrierwave'
 gem 'mini_magick'
 group :development do
   gem 'better_errors'
-  gem 'sqlite3'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
   gem 'rails_layout'
@@ -26,6 +25,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'cucumber'
+  gem 'sqlite3'
 end
 group :test do
   gem 'capybara'
